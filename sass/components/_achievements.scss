@@ -1,0 +1,45 @@
+.achievements {
+  z-index: 1;
+  position: relative;
+}
+
+.achievement {
+  &__item {
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 3rem 0;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.4s;
+
+    &:hover {
+      transform: translateY(-1rem);
+    }
+  }
+
+  &__num {
+    font-size: 2.6rem;
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+    color: $color-grey-dark-3;
+  }
+
+  &__name {
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    color: $color-grey-dark-2;
+  }
+
+  &__icon {
+    font-size: 2.6rem;
+    margin-bottom: 1.2rem;
+    margin-right: 0;
+  }
+}
