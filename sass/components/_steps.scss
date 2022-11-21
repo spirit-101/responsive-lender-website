@@ -1,0 +1,55 @@
+.step {
+  font-family: "Rubik", sans-serif;
+  color: #555;
+
+  &__item {
+    box-shadow: 0px 8px 24px rgb(0 0 0 / 15%);
+    padding: 4.8rem 2.4rem 6.2rem 2.4rem;
+    border-radius: 11px;
+    transition: all 0.4s;
+
+    &:hover {
+      transform: translateY(-2rem);
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+  }
+
+  &__number {
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: $color-primary-dark;
+    border-radius: 50%;
+    padding: 1rem;
+
+    &-box {
+      text-align: end;
+    }
+  }
+
+  &__icon {
+    width: 3.2rem;
+    height: 3.2rem;
+    color: $color-primary-dark;
+  }
+
+  &__special {
+    transform: translateY(5.4rem);
+
+    &:hover {
+      transform: translateY(-2rem);
+    }
+  }
+}
