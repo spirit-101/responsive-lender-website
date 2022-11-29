@@ -1,0 +1,73 @@
+.ceo {
+  grid-template-columns: 1fr 1fr min-content;
+
+  &__img {
+    width: 70%;
+    display: block;
+    filter: grayscale(60%);
+    border: 2px solid $color-primary;
+    padding: 5px;
+  }
+
+  &__text-box {
+    align-self: center;
+    margin-left: -25rem;
+    padding: 0 13rem;
+    line-height: 1.4;
+    font-family: "Rubik", sans-serif;
+    position: relative;
+
+    &::before {
+      content: "”";
+      font-family: sans-serif;
+      position: absolute;
+      color: #e9e9e9;
+      font-size: 40rem;
+      left: 100%;
+      top: 0;
+      transform: translateY(-10%);
+    }
+  }
+
+  &__text {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+  }
+
+  &__name {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 0.1rem;
+  }
+
+  &__title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #636363;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    display: block;
+    margin-bottom: 1.6rem;
+  }
+
+  &__btn {
+    font-size: 1.6rem;
+    color: $color-primary-dark;
+    text-decoration: none;
+    transition: all 0.2s;
+
+    &:hover &__icon {
+      margin-left: 1rem;
+    }
+
+    &__icon {
+      margin-left: 0.5rem;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+  }
+}
