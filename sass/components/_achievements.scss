@@ -1,6 +1,9 @@
 .achievements {
   z-index: 1;
-  position: relative;
+
+  &__grid {
+    grid-template-columns: repeat(4, minmax(min-content, 1fr));
+  }
 }
 
 .achievement {
@@ -12,9 +15,6 @@
     padding: 3rem 0;
     border-radius: 10px;
     cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     transition: all 0.4s;
 
     &:hover {
