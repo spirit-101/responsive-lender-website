@@ -1,0 +1,68 @@
+.footer {
+  padding: 12rem 0 8rem 0;
+  background-color: $color-primary-light;
+
+  &__grid {
+    grid-template-columns: repeat(4, minmax(min-content, 1fr));
+  }
+
+  &__logo {
+    width: 12rem;
+    margin-bottom: 1.6rem;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 3.6rem;
+    text-transform: uppercase;
+    text-align: start;
+    color: $color-primary-dark;
+  }
+
+  &__p {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+    color: $color-grey-dark;
+  }
+
+  &__social-links {
+    display: flex;
+    gap: 1.8rem;
+    list-style: none;
+  }
+
+  &__social-icon {
+    font-size: 2rem;
+    color: $color-primary-dark;
+  }
+
+  &__nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #444;
+    transition: all 0.3s;
+    font-style: normal;
+    display: block;
+
+    &:hover {
+      color: $color-primary-dark;
+    }
+  }
+
+  &__address {
+    font-size: 1.5rem;
+    font-style: normal;
+    line-height: 1.4;
+    margin-bottom: 1.7rem;
+  }
+}
