@@ -1,3 +1,4 @@
+console.log("Hello world!");
 // Make mobile navigation work
 
 const btnNavEl = document.querySelector(".btn-mobile-nav");
