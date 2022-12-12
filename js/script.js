@@ -23,7 +23,7 @@ allLinks.forEach(function (link) {
         top: 0,
         behavior: "smooth",
       });
-            
+
     // Scroll to other links
     if (href !== "#" && href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
