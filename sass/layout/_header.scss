@@ -4,9 +4,26 @@
   align-items: center;
   background-color: #f1f7f4;
 
-  padding: 4rem 4.8rem 1.2rem 4.8rem;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+
+  @include respond(tab-port) {
+    justify-content: flex-start;
+  }
+
+  &__cta {
+    @include respond(tab-port) {
+      margin-left: auto;
+      margin-right: 3.2rem;
+    }
+  }
 }
 
 .logo {
   height: 2.6rem;
+
+  @include respond(phone-small) {
+    height: 2rem;
+  }
 }

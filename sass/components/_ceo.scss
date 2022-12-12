@@ -1,9 +1,16 @@
 .ceo {
   grid-template-columns: 1fr 1fr min-content;
 
+  @include respond(tab-small) {
+    grid-template-columns: 1fr 40%;
+  }
+
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+  }
+
   &__img {
-    width: 70%;
-    display: block;
+    max-width: 75%;
     filter: grayscale(60%);
     border: 2px solid $color-primary;
     padding: 5px;
@@ -17,6 +24,16 @@
     font-family: "Rubik", sans-serif;
     position: relative;
 
+    @include respond(tab-small) {
+      margin-left: -15rem;
+      padding: 0 3rem;
+    }
+
+    @include respond(phone) {
+      padding: 0;
+      margin-left: 0;
+    }
+
     &::before {
       content: "”";
       font-family: sans-serif;
@@ -26,6 +43,14 @@
       left: 100%;
       top: 0;
       transform: translateY(-10%);
+
+      @include respond(tab-small) {
+        font-size: 20rem;
+      }
+
+      @include respond(phone-small) {
+        font-size: 14rem;
+      }
     }
   }
 
@@ -33,6 +58,18 @@
     font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 1.2rem;
+
+    @include respond(tab-land) {
+      font-size: 1.8rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 1.6rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1.8rem;
+    }
   }
 
   &__name {

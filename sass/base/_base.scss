@@ -6,4 +6,19 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
+
+  @include respond(tab-land) {
+    // width <= 1200?
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    // width <= 900?
+    font-size: 50%;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
 }

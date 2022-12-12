@@ -16,6 +16,10 @@
 
 .margin-bottom-xl {
   margin-bottom: 9.6rem !important;
+
+  @include respond(tab-port) {
+    margin-bottom: 6.6rem !important;
+  }
 }
 
 .text-center {

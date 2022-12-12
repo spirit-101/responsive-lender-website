@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,6 +22,7 @@
     />
 
     <link rel="stylesheet" href="css/main.css" />
+    <script defer src="js/script.js"></script>
   </head>
   <body>
     <header class="header">
@@ -30,125 +31,48 @@
       </a>
       <nav class="main-nav">
         <ul class="main-nav__list">
-          <li><a class="main-nav__link" href="#">Section 1</a></li>
-          <li><a class="main-nav__link" href="#">Section 2</a></li>
+          <li><a class="main-nav__link" href="#">Home</a></li>
+          <li><a class="main-nav__link" href="#">About</a></li>
+          <li><a class="main-nav__link" href="#">Process</a></li>
           <li>
-            <a class="main-nav__link" href="#">Section 3</a>
+            <a class="main-nav__link" href="#">Testimonials</a>
           </li>
-          <li><a class="main-nav__link" href="#">Section 4</a></li>
-          <li>
-            <a class="main-nav__link btn btn__apply" href="#">Section 5</a>
-          </li>
+          <li><a class="main-nav__link" href="#">Contact us</a></li>
         </ul>
       </nav>
+      <div class="header__cta">
+        <a class="btn__apply" href="#">Apply now</a>
+      </div>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
 
     <main>
       <section class="section-hero">
         <div class="hero">
-          <div class="gallery">
-            <figure class="gallery__item gallery__item--1">
-              <img
-                src="img/hero-img--1.webp"
-                alt="Gallery Image"
-                class="gallery__img"
-              />
-            </figure>
-            <figure class="gallery__item gallery__item--2">
-              <img
-                src="img/hero-img--2.webp"
-                alt="Gallery Image"
-                class="gallery__img"
-              />
-            </figure>
-            <figure class="gallery__item gallery__item--3">
-              <img
-                src="img/hero-img--3.webp"
-                alt="Gallery Image"
-                class="gallery__img"
-              />
-            </figure>
-            <figure class="gallery__item gallery__item--4">
-              <img
-                src="img/hero-img--4.webp"
-                alt="Gallery Image"
-                class="gallery__img"
-              />
-            </figure>
-            <figure class="gallery__item gallery__item--5">
-              <img
-                src="img/hero-img--5.webp"
-                alt="Gallery Image"
-                class="gallery__img"
-              />
-            </figure>
-            <figure class="gallery__item gallery__item--6">
-              <img
-                src="img/hero-img--6.webp"
-                alt="Gallery Image"
-                class="gallery__img"
-              />
-            </figure>
-          </div>
           <div class="hero__text-box">
-            <span class="hero-sub">Over 5,000,000 Customers</span>
-            <h1 class="heading-primary margin-bottom-sm">
-              Make your dreams come true
+            <!-- <span class="hero-sub">Over 5,000,000 Customers</span> -->
+            <h1 class="heading-primary margin-bottom-md">
+              Make your dreams come true, in days.
             </h1>
             <p class="hero__text">
               Simpley makes it easier to obtain loans and mortgages, with low
               interest fees and requirements.
             </p>
-          </div>
-          <div class="gallery">
-            <figure class="gallery__item gallery__item--7">
-              <img
-                src="img/hero-img--7.webp"
-                alt="Gallery image"
-                class="gallery__img"
-              />
-            </figure>
-            <figure class="gallery__item gallery__item--8">
-              <img
-                src="img/hero-img--8.webp"
-                alt="Gallery image"
-                class="gallery__img"
-              />
-            </figure>
-            <figure class="gallery__item gallery__item--9">
-              <img
-                src="img/hero-img--9.webp"
-                alt="Gallery image"
-                class="gallery__img"
-              />
-            </figure>
-            <figure class="gallery__item gallery__item--10">
-              <img
-                src="img/hero-img--10.webp"
-                alt="Gallery image"
-                class="gallery__img"
-              />
-            </figure>
-            <figure class="gallery__item gallery__item--11">
-              <img
-                src="img/hero-img--11.webp"
-                alt="Gallery image"
-                class="gallery__img"
-              />
-            </figure>
-            <figure class="gallery__item gallery__item--12">
-              <img
-                src="img/hero-img--12.webp"
-                alt="Gallery image"
-                class="gallery__img"
-              />
-            </figure>
+            <div class="hero__btn-box">
+              <a class="hero__btn"
+                >Learn more <span class="hero__btn-invisible">&nbsp;</span></a
+              >
+            </div>
           </div>
         </div>
       </section>
 
       <section class="section-feature">
-        <div class="container">
+        <div class="container feature__head">
           <span class="subheading">The process</span>
           <h2 class="heading-secondary margin-bottom-xl">
             Chase your dreams with just a few clicks
@@ -164,7 +88,7 @@
             />
           </div>
           <div class="feature__info">
-            <div class="feature__info-box">
+            <div class="feature__info-box feature__info-box-normal">
               <div class="feature__icon-box">
                 <ion-icon
                   class="feature__icon"
@@ -179,7 +103,7 @@
               </p>
             </div>
 
-            <div class="feature__info-box">
+            <div class="feature__info-box feature__info-box-normal">
               <div class="feature__icon-box">
                 <ion-icon
                   class="feature__icon"
@@ -198,7 +122,7 @@
 
         <div class="container grid grid--2-cols">
           <div class="feature__info">
-            <div class="feature__info-box">
+            <div class="feature__info-box feature__info-box-special">
               <div class="feature__icon-box">
                 <ion-icon class="feature__icon" name="cash-outline"></ion-icon>
               </div>
@@ -210,7 +134,7 @@
               </p>
             </div>
 
-            <div class="feature__info-box">
+            <div class="feature__info-box feature__info-box-special">
               <div class="feature__icon-box">
                 <ion-icon class="feature__icon" name="call-outline"></ion-icon>
               </div>
@@ -223,7 +147,7 @@
             </div>
           </div>
 
-          <div class="feature__img-box">
+          <div class="feature__img-box feature__img-box--special">
             <img
               src="img/feature-2.webp"
               alt="Person writing"
@@ -241,7 +165,7 @@
             />
           </div>
           <div class="feature__info">
-            <div class="feature__info-box">
+            <div class="feature__info-box feature__info-box-normal">
               <div class="feature__icon-box">
                 <ion-icon class="feature__icon" name="wifi-outline"></ion-icon>
               </div>
@@ -253,7 +177,7 @@
               </p>
             </div>
 
-            <div class="feature__info-box">
+            <div class="feature__info-box feature__info-box-normal">
               <div class="feature__icon-box">
                 <ion-icon
                   class="feature__icon"
@@ -338,7 +262,7 @@
 
           <div class="option__item">
             <ion-icon class="option__icon" name="call-outline"></ion-icon>
-            <p class="option__name">Customer Service</p>
+            <p class="option__name">Service</p>
           </div>
 
           <div class="option__item">
@@ -363,7 +287,7 @@
             Can't get any easier than this
           </h2>
         </div>
-        <div class="step container grid grid--3-cols">
+        <div class="step container">
           <div class="step__item">
             <div class="step__number-box">
               <span class="step__number">01</span>
@@ -392,7 +316,7 @@
             </p>
           </div>
 
-          <div class="step__item">
+          <div class="step__item step__special-2">
             <div class="step__number-box">
               <span class="step__number">03</span>
             </div>
@@ -410,9 +334,7 @@
       <section class="section-testimonials">
         <div class="container testimonial">
           <div class="testimonial__title-box">
-            <h2
-              class="testimonial__title-box__heading heading-secondary margin-bottom-md"
-            >
+            <h2 class="testimonial__title-box__heading heading-secondary">
               <span>100,000+</span> happy customers love Simpley.
             </h2>
             <p class="testimonial__title-box__text">
@@ -430,7 +352,7 @@
               <ion-icon class="rating-box__icon" name="star"></ion-icon>
               <ion-icon class="rating-box__icon" name="star"></ion-icon>
               <p class="rating-box__text">
-                Ranked #1 in <strong>Lending Companies</strong>
+                Ranked #1 in <strong>Lending</strong>
               </p>
             </div>
 
@@ -441,7 +363,7 @@
               <ion-icon class="rating-box__icon" name="star"></ion-icon>
               <ion-icon class="rating-box__icon" name="star"></ion-icon>
               <p class="rating-box__text">
-                Ranked #1 in <strong>Customer Service</strong>
+                Ranked #1 in <strong>Service</strong>
               </p>
             </div>
 
@@ -452,13 +374,13 @@
               <ion-icon class="rating-box__icon" name="star"></ion-icon>
               <ion-icon class="rating-box__icon" name="star"></ion-icon>
               <p class="rating-box__text">
-                Ranked #1 in <strong>Online Banking</strong>
+                Ranked #1 in <strong>Banking</strong>
               </p>
             </div>
           </div>
         </div>
 
-        <div class="container grid grid--3-cols">
+        <div class="container grid testimonial__grid">
           <figure class="testimonial__item">
             <div class="testimonial__item__title-box">
               <div class="testimonial__item__title-box__img-box">
@@ -564,6 +486,13 @@
       </section>
 
       <footer class="footer">
+        <div class="cta__div">
+          <div class="container footer__cta">
+            <p class="footer__text">Ready to Chase Your Dreams?</p>
+            <button class="footer__btn">Get started with Simpley</button>
+          </div>
+        </div>
+
         <div class="container grid footer__grid">
           <div class="footer__info-col">
             <a href="#" class="footer__logo">

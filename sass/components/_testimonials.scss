@@ -4,14 +4,52 @@
   gap: 10rem;
   margin-bottom: 10rem;
 
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  @include respond(tab-small) {
+    margin-bottom: 6rem;
+  }
+
+  &__grid {
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+  }
+
+  &__rating-box {
+    @include respond(tab-port) {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+
   &__title-box {
     padding: 0 2.8rem;
     transform: translateY(-3.6rem);
+
+    @include respond(tab-land) {
+      padding: 0 1.4rem;
+    }
+
+    @include respond(tab-port) {
+      padding: 0 0.8rem;
+    }
 
     &__heading {
       font-size: 4.4rem;
       line-height: 1.04;
       color: $color-primary-dark;
+      margin-bottom: 3.6rem;
+
+      @include respond(tab-port) {
+        font-size: 4.6rem;
+        margin-bottom: 2.4rem;
+      }
+
+      @include respond(phone-small) {
+        font-size: 3.6rem;
+      }
 
       & span {
         font-weight: 700;
@@ -23,6 +61,14 @@
       font-size: 1.6rem;
       line-height: 1.6;
       color: #555;
+
+      @include respond(tab-port) {
+        font-size: 1.8rem;
+      }
+
+      @include respond(phone-small) {
+        font-size: 1.6rem;
+      }
     }
   }
 
@@ -35,14 +81,26 @@
 
     &:nth-of-type(1) {
       transform: translateY(-4.4rem);
+
+      @include respond(tab-small) {
+        transform: translateY(0);
+      }
     }
 
     &:nth-of-type(2) {
       transform: translateY(-3.4rem);
+
+      @include respond(tab-small) {
+        transform: translateY(0);
+      }
     }
 
     &:nth-of-type(3) {
       transform: translateY(-1.4rem);
+
+      @include respond(tab-small) {
+        transform: translate(0);
+      }
     }
 
     &__title-box {
@@ -53,6 +111,10 @@
 
       &__info {
         margin-left: -7rem;
+
+        @include respond(tab-port) {
+          margin-left: -9rem;
+        }
       }
 
       &__author {
@@ -90,16 +152,45 @@
     width: 48rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 
+    @include respond(tab-port) {
+      width: 58rem;
+    }
+
+    @include respond(phone) {
+      width: 95%;
+      padding: 1.4rem 4rem;
+    }
+
     &:not(last-child) {
       margin-bottom: 3rem;
     }
 
     &:nth-child(2) {
       transform: translateX(4rem);
+
+      @include respond(tab-port) {
+        transform: translateX(12rem);
+      }
+
+      @include respond(tab-small) {
+        transform: translateX(4rem);
+      }
+
+      @include respond(phone) {
+        transform: translateX(0);
+      }
     }
 
     &:nth-child(3) {
       transform: translateX(8rem);
+
+      @include respond(tab-port) {
+        transform: translateX(9rem);
+      }
+
+      @include respond(phone) {
+        transform: translateX(0);
+      }
     }
   }
 
@@ -108,15 +199,30 @@
     font-size: 1.6rem;
     font-weight: 600;
 
+    @include respond(tab-port) {
+      font-size: 1.9rem;
+    }
+
     & strong {
       text-decoration: underline;
       color: $color-primary-dark;
+
+      @include respond(tab-port) {
+        text-decoration: none;
+      }
     }
   }
 
   &__icon {
-    color: #ffe066;
     color: $color-primary-dark;
     font-size: 1.8rem;
+
+    @include respond(tab-port) {
+      font-size: 2.3rem;
+    }
+
+    @include respond(phone) {
+      font-size: 2.6rem;
+    }
   }
 }

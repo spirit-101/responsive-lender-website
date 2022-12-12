@@ -1,6 +1,7 @@
 .option {
-  display: flex;
-  gap: 7.2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  gap: 4.4rem;
   text-align: center;
   justify-content: center;
   align-items: center;

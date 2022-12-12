@@ -3,22 +3,46 @@ body {
   font-weight: 400;
   line-height: 1;
   color: $color-grey-dark-2;
+  overflow-x: hidden;
 }
 
 .heading-primary {
-  font-size: 5.2rem;
+  font-size: 6.2rem;
   line-height: 1.05;
+  animation: moveInLeft 1s ease-out;
+
+  @include respond(tab-land) {
+    font-size: 4.8rem;
+  }
+
+  @include respond(tab-small) {
+    font-size: 4rem;
+  }
 }
 
 .heading-secondary {
   font-size: 4.2rem;
   font-weight: 600;
+
+  @include respond(tab-land) {
+    font-size: 2rem;
+  }
 }
 
 .heading-tertiary {
   font-size: 1.8rem;
   margin-bottom: 1.2rem;
   color: #555;
+
+  @include respond(tab-port) {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  @include respond(tab-port) {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .subheading {
