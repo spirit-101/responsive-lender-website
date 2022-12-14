@@ -1,6 +1,6 @@
-# responsive-lender-website
+# Simpley
 
-A project made upon completing Jonas Schmedtmann's Advanced CSS and SASS course, intended to assist me in absorbing the new concepts I have learnt as well as improving on the prior skills I've learnt (CSS/HTML).
+A project made upon completing Jonas Schmedtmann's Advanced CSS and SASS course, intended to assist me in absorbing, developing, and improving the old and new concepts I've learnt along my journey of HTML and CSS.
 
 Get the life you've always wanted - Simpley makes it easier to obtain loans and mortages, with low interest rates and requirements. 
 
