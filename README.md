@@ -1,8 +1,8 @@
 # Simpley
 
-A project made upon completing Jonas Schmedtmann's Advanced CSS and SASS course, intended to assist me in absorbing, developing, and improving the old and new concepts I've learnt along my journey of HTML and CSS.
+✏️ A project made upon completing Jonas Schmedtmann's Advanced CSS and SASS course, intended to assist me in absorbing, developing, and improving the old and new concepts I've learnt along my journey of HTML and CSS.
 
-Get the life you've always wanted - Simpley makes it easier to obtain loans and mortages, with low interest rates and requirements. 
+Get the life you've always wanted - Simpley makes it easier to obtain loans and mortages, with low interest rates and requirements. A website made in order to make dreams come true, with fast approval, 24/7 service, and a stress-free process. 
 
 ## Resources:
 
